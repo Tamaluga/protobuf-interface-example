@@ -13,6 +13,7 @@
         "extensions": [
           "pbkit.vscode-pbkit",
           "mhutchie.git-graph",
+          "github.vscode-github-actions",
           "redhat.vscode-yaml",
           "streetsidesoftware.code-spell-checker",
           "wayou.vscode-todo-highlight",
