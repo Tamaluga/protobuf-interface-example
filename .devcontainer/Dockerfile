@@ -10,7 +10,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Install packages
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-        # install other packages
+        openssh-client \
         protobuf-compiler && \
     # clean up
     rm -rf /var/lib/apt/lists/*
