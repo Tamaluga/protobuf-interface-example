@@ -1,0 +1,24 @@
+{
+    "name": "protobuf-interface-example",
+    // Specify which docker file to use
+    "build": { "dockerfile": "Dockerfile" },	
+    // Must match the user defined in the docker file used under the "build" setting
+    "remoteUser": "vscode",
+    // Mount local ~/.ssh folder to have the ssh keys for pushing to git
+    "mounts": [
+      "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+    ],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "pbkit.vscode-pbkit",
+          "mhutchie.git-graph",
+          "redhat.vscode-yaml",
+          "streetsidesoftware.code-spell-checker",
+          "wayou.vscode-todo-highlight",
+          "yzhang.markdown-all-in-one",
+        ]
+      }
+    }
+  }
+  

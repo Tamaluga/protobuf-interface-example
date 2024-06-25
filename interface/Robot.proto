@@ -1,0 +1,92 @@
+// [START declaration]
+syntax = "proto3";
+package robot_control_interface;
+
+// shared types
+message Axis{
+	double axis_1=1;
+	double axis_2=2;
+	double axis_3=3;
+	double axis_4=4;
+	double axis_5=5;
+	double axis_6=6;
+}
+
+enum DeviceType
+{
+	ROBOT_ARM=0;
+	LIGHT_SENSOR=1;
+	ALL=2;
+}
+
+// message from arm to cloud
+message Upstream
+{
+	//messages supported by all devices
+	message DeviceDescription 
+	{
+		string name=1;
+		DeviceType type=2;
+	}
+	enum Error
+	{
+		NONE=0;
+		ROBOT_ARM_FAILED_TO_REACH_AXIS=1;
+	}
+	//messages robot arm
+	message ValuesRobotArm
+	{
+		Axis axis=1;
+		int32 axis_queue_size=2;
+	}
+	//messages light sensor
+	message ValuesLightSensor
+	{
+		double light=1;
+	}
+
+	message OneMessage
+	{
+		uint32 TargetDeviceAddress=1;
+		oneof sub_message{
+			DeviceDescription device_description=2;
+			ValuesRobotArm values_robot_arm=3;
+			ValuesLightSensor values_light_sensor=4;
+			Error error=5;
+		}
+	}
+
+	repeated OneMessage message=1;
+}
+
+// message from cloud to arm
+message Downstream
+{
+	//messages supported by all devices
+	message RequestValues
+	{
+		bool request_values=1;
+	}
+	//messages robot arm
+	message SetAxisRobotArm{
+		Axis target_axis=1;
+	}
+	message ClearQueueRobotArm{
+		bool clear_queue=1;
+	}
+
+	message OneMessage
+	{
+		// fields
+		uint32 TargetDeviceAddress=1;	
+		oneof sub_message{
+			RequestValues request_values=2;
+			SetAxisRobotArm set_axis_robot_arm=3;
+			ClearQueueRobotArm clear_queue_robot_arm=4;
+		}
+	}
+
+	repeated OneMessage message=1;
+}
+
+// [END messages]
