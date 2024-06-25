@@ -18,7 +18,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t my-docker-image .
+          docker build -t my-docker-image .devcontainer
 
       - name: Run Generate Proto Interface in Docker
         run: |
