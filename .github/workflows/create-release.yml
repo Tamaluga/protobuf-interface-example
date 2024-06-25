@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Generate Proto Interface in Docker
         run: |
-          docker run --rm -v ${{ github.workspace }}:/workspace my-docker-image /workspace/scripts/generate-interface.sh
+          docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/generate-interface.sh
 
   commit-and-tag:
     runs-on: ubuntu-latest

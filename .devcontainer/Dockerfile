@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM registry.gitlab.com/platform-template/base-toolchain-arm-bare-metal:2.0.0
+FROM ubuntu:22.04
 
 # Switch to root as the base-toolchain image switched the user
 USER root
