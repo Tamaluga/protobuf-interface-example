@@ -9,7 +9,7 @@ message Axis{
 	double axis_3=3;
 	double axis_4=4;
 	double axis_5=5;
-	double axis_6=6;
+	double axis_6=7;
 }
 
 enum DeviceType
