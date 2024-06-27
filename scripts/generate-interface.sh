@@ -13,7 +13,7 @@ pushd "${SCRIPT_PATH}/.." > /dev/null
 
 # Constants
 readonly INTERFACE_FOLDER="interface"
-readonly INTERFACE_FOLDER_C="${INTERFACE_FOLDER}/c"
+readonly INTERFACE_FOLDER_C="${INTERFACE_FOLDER}/cpp"
 readonly INTERFACE_FOLDER_C_SHARP="${INTERFACE_FOLDER}/c_sharp"
 
 # Create directories
