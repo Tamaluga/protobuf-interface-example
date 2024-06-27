@@ -2,11 +2,10 @@ name: Create New Release
 
 on:
   push:
-    branches: [ "wip-initial-implementation" ]
-    paths:
-      - 'interfaces/**'
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    
 permissions:
   contents: write
 
@@ -14,7 +13,7 @@ permissions:
 # https://stackoverflow.com/questions/57921401/push-to-origin-from-github-action/58393457#58393457
 
 jobs:
-  check-and-tag-interface:
+  check-interface:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +27,15 @@ jobs:
       - name: Check if generated interface matches the proto file
         run: |
           docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/check-generated-interface.sh
-          
+
+  create-tag:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Create a new tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
