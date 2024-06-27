@@ -1,4 +1,4 @@
-name: Create New Release
+name: CheckNTag
 
 on:
   push:
@@ -30,6 +30,7 @@ jobs:
 
   create-tag:
     runs-on: ubuntu-latest
+    needs: check-interface
     if: github.event_name == 'push'
 
     steps:
