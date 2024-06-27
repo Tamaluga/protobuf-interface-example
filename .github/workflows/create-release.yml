@@ -25,17 +25,9 @@ jobs:
         run: |
           docker build -t my-docker-image .devcontainer
 
-      - name: Run Generate Proto Interface in Docker
+      - name: Check if generated interface matches the proto file
         run: |
-          docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/generate-interface.sh
-
-      - name: Commit generated files
-        run: |
-          git config --global user.name 'Frutiger Daniel'
-          git config --global user.email 'daniel.frutiger@outlook.com'
-          git commit -am "Automated commit from GitHub Actions" || echo "No changes to commit"
-          git push
-          # git push origin HEAD:wip-initial-implementation
+          docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/check-generated-interface.sh
           
       - name: Create a new tag
         env:
