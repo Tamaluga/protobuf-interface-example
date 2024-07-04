@@ -1,6 +1,6 @@
 // [START declaration]
 syntax = "proto3";
-package robot_control_interface;
+package robot_interface;
 
 // shared types
 message Axis{
