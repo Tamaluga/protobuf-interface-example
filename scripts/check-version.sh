@@ -13,7 +13,7 @@ pushd "${SCRIPT_PATH}/.." > /dev/null
 
 readonly VERSION_FILE="version.txt"
 readonly CPP_PROJECT_FILE="interface/cpp/CMakeLists.txt"
-readonly C_SHARP_PROJECT_FILE="interface/c_sharp/RobotControlInterface.csproj"
+readonly C_SHARP_PROJECT_FILE="interface/c_sharp/RobotInterface.csproj"
 EXIT_CODE=0
 
 # Get the versions
