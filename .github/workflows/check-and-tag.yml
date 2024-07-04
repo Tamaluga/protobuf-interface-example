@@ -1,0 +1,47 @@
+name: CheckNTag
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+permissions:
+  contents: write
+
+jobs:
+  check-interface:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t my-docker-image .devcontainer
+
+      - name: Check if generated interface matches the proto file
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/check-generated-interface.sh
+
+      - name: Check if version is up to date
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/workspace --user $(id -u):$(id -g) my-docker-image /workspace/scripts/check-version.sh
+
+  create-tag:
+    runs-on: ubuntu-latest
+    needs: check-interface
+    if: github.event_name == 'push'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create a new tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=$(cat ${VERSION_FILE})
+          git tag ${VERSION}
+          git push origin ${VERSION}
