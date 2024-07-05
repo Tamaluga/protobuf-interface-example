@@ -27,43 +27,43 @@ namespace RobotInterface {
             "ChRSb2JvdEludGVyZmFjZS5wcm90bxIPcm9ib3RfaW50ZXJmYWNlImYKBEF4",
             "aXMSDgoGYXhpc18xGAEgASgBEg4KBmF4aXNfMhgCIAEoARIOCgZheGlzXzMY",
             "AyABKAESDgoGYXhpc180GAQgASgBEg4KBmF4aXNfNRgFIAEoARIOCgZheGlz",
-            "XzYYBiABKAEihAUKCFVwc3RyZWFtEjUKB21lc3NhZ2UYASADKAsyJC5yb2Jv",
-            "dF9pbnRlcmZhY2UuVXBzdHJlYW0uT25lTWVzc2FnZRpMChFEZXZpY2VEZXNj",
-            "cmlwdGlvbhIMCgRuYW1lGAEgASgJEikKBHR5cGUYAiABKA4yGy5yb2JvdF9p",
-            "bnRlcmZhY2UuRGV2aWNlVHlwZRpOCg5WYWx1ZXNSb2JvdEFybRIjCgRheGlz",
-            "GAEgASgLMhUucm9ib3RfaW50ZXJmYWNlLkF4aXMSFwoPYXhpc19xdWV1ZV9z",
-            "aXplGAIgASgFGiIKEVZhbHVlc0xpZ2h0U2Vuc29yEg0KBWxpZ2h0GAEgASgB",
-            "GscCCgpPbmVNZXNzYWdlEhsKE1RhcmdldERldmljZUFkZHJlc3MYASABKA0S",
-            "SQoSZGV2aWNlX2Rlc2NyaXB0aW9uGAIgASgLMisucm9ib3RfaW50ZXJmYWNl",
-            "LlVwc3RyZWFtLkRldmljZURlc2NyaXB0aW9uSAASRAoQdmFsdWVzX3JvYm90",
-            "X2FybRgDIAEoCzIoLnJvYm90X2ludGVyZmFjZS5VcHN0cmVhbS5WYWx1ZXNS",
-            "b2JvdEFybUgAEkoKE3ZhbHVlc19saWdodF9zZW5zb3IYBCABKAsyKy5yb2Jv",
-            "dF9pbnRlcmZhY2UuVXBzdHJlYW0uVmFsdWVzTGlnaHRTZW5zb3JIABIwCgVl",
-            "cnJvchgFIAEoDjIfLnJvYm90X2ludGVyZmFjZS5VcHN0cmVhbS5FcnJvckgA",
-            "Qg0KC3N1Yl9tZXNzYWdlIjUKBUVycm9yEggKBE5PTkUQABIiCh5ST0JPVF9B",
-            "Uk1fRkFJTEVEX1RPX1JFQUNIX0FYSVMQASL0AwoKRG93bnN0cmVhbRI3Cgdt",
-            "ZXNzYWdlGAEgAygLMiYucm9ib3RfaW50ZXJmYWNlLkRvd25zdHJlYW0uT25l",
-            "TWVzc2FnZRonCg1SZXF1ZXN0VmFsdWVzEhYKDnJlcXVlc3RfdmFsdWVzGAEg",
-            "ASgIGj0KD1NldEF4aXNSb2JvdEFybRIqCgt0YXJnZXRfYXhpcxgBIAEoCzIV",
-            "LnJvYm90X2ludGVyZmFjZS5BeGlzGikKEkNsZWFyUXVldWVSb2JvdEFybRIT",
-            "CgtjbGVhcl9xdWV1ZRgBIAEoCBqZAgoKT25lTWVzc2FnZRIbChNUYXJnZXRE",
-            "ZXZpY2VBZGRyZXNzGAEgASgNEkMKDnJlcXVlc3RfdmFsdWVzGAIgASgLMiku",
-            "cm9ib3RfaW50ZXJmYWNlLkRvd25zdHJlYW0uUmVxdWVzdFZhbHVlc0gAEkkK",
-            "EnNldF9heGlzX3JvYm90X2FybRgDIAEoCzIrLnJvYm90X2ludGVyZmFjZS5E",
-            "b3duc3RyZWFtLlNldEF4aXNSb2JvdEFybUgAEk8KFWNsZWFyX3F1ZXVlX3Jv",
-            "Ym90X2FybRgEIAEoCzIuLnJvYm90X2ludGVyZmFjZS5Eb3duc3RyZWFtLkNs",
-            "ZWFyUXVldWVSb2JvdEFybUgAQg0KC3N1Yl9tZXNzYWdlKjYKCkRldmljZVR5",
-            "cGUSDQoJUk9CT1RfQVJNEAASEAoMTElHSFRfU0VOU09SEAESBwoDQUxMEAJi",
-            "BnByb3RvMw=="));
+            "XzYYBiABKAEihwUKCFVwc3RyZWFtEjYKCG1lc3NhZ2VzGAEgAygLMiQucm9i",
+            "b3RfaW50ZXJmYWNlLlVwc3RyZWFtLk9uZU1lc3NhZ2UaTAoRRGV2aWNlRGVz",
+            "Y3JpcHRpb24SDAoEbmFtZRgBIAEoCRIpCgR0eXBlGAIgASgOMhsucm9ib3Rf",
+            "aW50ZXJmYWNlLkRldmljZVR5cGUaTgoOVmFsdWVzUm9ib3RBcm0SIwoEYXhp",
+            "cxgBIAEoCzIVLnJvYm90X2ludGVyZmFjZS5BeGlzEhcKD2F4aXNfcXVldWVf",
+            "c2l6ZRgCIAEoBRoiChFWYWx1ZXNMaWdodFNlbnNvchINCgVsaWdodBgBIAEo",
+            "ARrJAgoKT25lTWVzc2FnZRIdChV0YXJnZXRfZGV2aWNlX2FkZHJlc3MYASAB",
+            "KA0SSQoSZGV2aWNlX2Rlc2NyaXB0aW9uGAIgASgLMisucm9ib3RfaW50ZXJm",
+            "YWNlLlVwc3RyZWFtLkRldmljZURlc2NyaXB0aW9uSAASRAoQdmFsdWVzX3Jv",
+            "Ym90X2FybRgDIAEoCzIoLnJvYm90X2ludGVyZmFjZS5VcHN0cmVhbS5WYWx1",
+            "ZXNSb2JvdEFybUgAEkoKE3ZhbHVlc19saWdodF9zZW5zb3IYBCABKAsyKy5y",
+            "b2JvdF9pbnRlcmZhY2UuVXBzdHJlYW0uVmFsdWVzTGlnaHRTZW5zb3JIABIw",
+            "CgVlcnJvchgFIAEoDjIfLnJvYm90X2ludGVyZmFjZS5VcHN0cmVhbS5FcnJv",
+            "ckgAQg0KC3N1Yl9tZXNzYWdlIjUKBUVycm9yEggKBE5PTkUQABIiCh5ST0JP",
+            "VF9BUk1fRkFJTEVEX1RPX1JFQUNIX0FYSVMQASL3AwoKRG93bnN0cmVhbRI4",
+            "CghtZXNzYWdlcxgBIAMoCzImLnJvYm90X2ludGVyZmFjZS5Eb3duc3RyZWFt",
+            "Lk9uZU1lc3NhZ2UaJwoNUmVxdWVzdFZhbHVlcxIWCg5yZXF1ZXN0X3ZhbHVl",
+            "cxgBIAEoCBo9Cg9TZXRBeGlzUm9ib3RBcm0SKgoLdGFyZ2V0X2F4aXMYASAB",
+            "KAsyFS5yb2JvdF9pbnRlcmZhY2UuQXhpcxopChJDbGVhclF1ZXVlUm9ib3RB",
+            "cm0SEwoLY2xlYXJfcXVldWUYASABKAgamwIKCk9uZU1lc3NhZ2USHQoVdGFy",
+            "Z2V0X2RldmljZV9hZGRyZXNzGAEgASgNEkMKDnJlcXVlc3RfdmFsdWVzGAIg",
+            "ASgLMikucm9ib3RfaW50ZXJmYWNlLkRvd25zdHJlYW0uUmVxdWVzdFZhbHVl",
+            "c0gAEkkKEnNldF9heGlzX3JvYm90X2FybRgDIAEoCzIrLnJvYm90X2ludGVy",
+            "ZmFjZS5Eb3duc3RyZWFtLlNldEF4aXNSb2JvdEFybUgAEk8KFWNsZWFyX3F1",
+            "ZXVlX3JvYm90X2FybRgEIAEoCzIuLnJvYm90X2ludGVyZmFjZS5Eb3duc3Ry",
+            "ZWFtLkNsZWFyUXVldWVSb2JvdEFybUgAQg0KC3N1Yl9tZXNzYWdlKjYKCkRl",
+            "dmljZVR5cGUSDQoJUk9CT1RfQVJNEAASEAoMTElHSFRfU0VOU09SEAESBwoD",
+            "QUxMEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RobotInterface.DeviceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Axis), global::RobotInterface.Axis.Parser, new[]{ "Axis1", "Axis2", "Axis3", "Axis4", "Axis5", "Axis6" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream), global::RobotInterface.Upstream.Parser, new[]{ "Message" }, null, new[]{ typeof(global::RobotInterface.Upstream.Types.Error) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream.Types.DeviceDescription), global::RobotInterface.Upstream.Types.DeviceDescription.Parser, new[]{ "Name", "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream), global::RobotInterface.Upstream.Parser, new[]{ "Messages" }, null, new[]{ typeof(global::RobotInterface.Upstream.Types.Error) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream.Types.DeviceDescription), global::RobotInterface.Upstream.Types.DeviceDescription.Parser, new[]{ "Name", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream.Types.ValuesRobotArm), global::RobotInterface.Upstream.Types.ValuesRobotArm.Parser, new[]{ "Axis", "AxisQueueSize" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream.Types.ValuesLightSensor), global::RobotInterface.Upstream.Types.ValuesLightSensor.Parser, new[]{ "Light" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Upstream.Types.OneMessage), global::RobotInterface.Upstream.Types.OneMessage.Parser, new[]{ "TargetDeviceAddress", "DeviceDescription", "ValuesRobotArm", "ValuesLightSensor", "Error" }, new[]{ "SubMessage" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream), global::RobotInterface.Downstream.Parser, new[]{ "Message" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream.Types.RequestValues), global::RobotInterface.Downstream.Types.RequestValues.Parser, new[]{ "RequestValues_" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream), global::RobotInterface.Downstream.Parser, new[]{ "Messages" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream.Types.RequestValues), global::RobotInterface.Downstream.Types.RequestValues.Parser, new[]{ "RequestValues_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream.Types.SetAxisRobotArm), global::RobotInterface.Downstream.Types.SetAxisRobotArm.Parser, new[]{ "TargetAxis" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream.Types.ClearQueueRobotArm), global::RobotInterface.Downstream.Types.ClearQueueRobotArm.Parser, new[]{ "ClearQueue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RobotInterface.Downstream.Types.OneMessage), global::RobotInterface.Downstream.Types.OneMessage.Parser, new[]{ "TargetDeviceAddress", "RequestValues", "SetAxisRobotArm", "ClearQueueRobotArm" }, new[]{ "SubMessage" }, null, null, null)})
@@ -83,7 +83,7 @@ namespace RobotInterface {
 
   #region Messages
   /// <summary>
-  /// shared types
+  /// Shared types
   /// </summary>
   public sealed partial class Axis : pb::IMessage<Axis> {
     private static readonly pb::MessageParser<Axis> _parser = new pb::MessageParser<Axis>(() => new Axis());
@@ -355,7 +355,7 @@ namespace RobotInterface {
   }
 
   /// <summary>
-  /// message from arm to cloud
+  /// Message from arm to cloud
   /// </summary>
   public sealed partial class Upstream : pb::IMessage<Upstream> {
     private static readonly pb::MessageParser<Upstream> _parser = new pb::MessageParser<Upstream>(() => new Upstream());
@@ -382,7 +382,7 @@ namespace RobotInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Upstream(Upstream other) : this() {
-      message_ = other.message_.Clone();
+      messages_ = other.messages_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -391,14 +391,14 @@ namespace RobotInterface {
       return new Upstream(this);
     }
 
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RobotInterface.Upstream.Types.OneMessage> _repeated_message_codec
+    /// <summary>Field number for the "messages" field.</summary>
+    public const int MessagesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::RobotInterface.Upstream.Types.OneMessage> _repeated_messages_codec
         = pb::FieldCodec.ForMessage(10, global::RobotInterface.Upstream.Types.OneMessage.Parser);
-    private readonly pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage> message_ = new pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage>();
+    private readonly pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage> messages_ = new pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage> Message {
-      get { return message_; }
+    public pbc::RepeatedField<global::RobotInterface.Upstream.Types.OneMessage> Messages {
+      get { return messages_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -414,14 +414,14 @@ namespace RobotInterface {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!message_.Equals(other.message_)) return false;
+      if(!messages_.Equals(other.messages_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= message_.GetHashCode();
+      hash ^= messages_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -435,7 +435,7 @@ namespace RobotInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      message_.WriteTo(output, _repeated_message_codec);
+      messages_.WriteTo(output, _repeated_messages_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -444,7 +444,7 @@ namespace RobotInterface {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += message_.CalculateSize(_repeated_message_codec);
+      size += messages_.CalculateSize(_repeated_messages_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -456,7 +456,7 @@ namespace RobotInterface {
       if (other == null) {
         return;
       }
-      message_.Add(other.message_);
+      messages_.Add(other.messages_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -469,7 +469,7 @@ namespace RobotInterface {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            message_.AddEntriesFrom(input, _repeated_message_codec);
+            messages_.AddEntriesFrom(input, _repeated_messages_codec);
             break;
           }
         }
@@ -486,7 +486,7 @@ namespace RobotInterface {
       }
 
       /// <summary>
-      ///messages supported by all devices
+      /// Messages supported by all devices
       /// </summary>
       public sealed partial class DeviceDescription : pb::IMessage<DeviceDescription> {
         private static readonly pb::MessageParser<DeviceDescription> _parser = new pb::MessageParser<DeviceDescription>(() => new DeviceDescription());
@@ -646,7 +646,7 @@ namespace RobotInterface {
       }
 
       /// <summary>
-      ///messages robot arm
+      /// Messages for robot arm
       /// </summary>
       public sealed partial class ValuesRobotArm : pb::IMessage<ValuesRobotArm> {
         private static readonly pb::MessageParser<ValuesRobotArm> _parser = new pb::MessageParser<ValuesRobotArm>(() => new ValuesRobotArm());
@@ -812,7 +812,7 @@ namespace RobotInterface {
       }
 
       /// <summary>
-      ///messages light sensor
+      /// Messages for light sensor
       /// </summary>
       public sealed partial class ValuesLightSensor : pb::IMessage<ValuesLightSensor> {
         private static readonly pb::MessageParser<ValuesLightSensor> _parser = new pb::MessageParser<ValuesLightSensor>(() => new ValuesLightSensor());
@@ -992,7 +992,7 @@ namespace RobotInterface {
           return new OneMessage(this);
         }
 
-        /// <summary>Field number for the "TargetDeviceAddress" field.</summary>
+        /// <summary>Field number for the "target_device_address" field.</summary>
         public const int TargetDeviceAddressFieldNumber = 1;
         private uint targetDeviceAddress_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1252,7 +1252,7 @@ namespace RobotInterface {
   }
 
   /// <summary>
-  /// message from cloud to arm
+  /// Message from cloud to arm
   /// </summary>
   public sealed partial class Downstream : pb::IMessage<Downstream> {
     private static readonly pb::MessageParser<Downstream> _parser = new pb::MessageParser<Downstream>(() => new Downstream());
@@ -1279,7 +1279,7 @@ namespace RobotInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Downstream(Downstream other) : this() {
-      message_ = other.message_.Clone();
+      messages_ = other.messages_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1288,14 +1288,14 @@ namespace RobotInterface {
       return new Downstream(this);
     }
 
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RobotInterface.Downstream.Types.OneMessage> _repeated_message_codec
+    /// <summary>Field number for the "messages" field.</summary>
+    public const int MessagesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::RobotInterface.Downstream.Types.OneMessage> _repeated_messages_codec
         = pb::FieldCodec.ForMessage(10, global::RobotInterface.Downstream.Types.OneMessage.Parser);
-    private readonly pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage> message_ = new pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage>();
+    private readonly pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage> messages_ = new pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage> Message {
-      get { return message_; }
+    public pbc::RepeatedField<global::RobotInterface.Downstream.Types.OneMessage> Messages {
+      get { return messages_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1311,14 +1311,14 @@ namespace RobotInterface {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!message_.Equals(other.message_)) return false;
+      if(!messages_.Equals(other.messages_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= message_.GetHashCode();
+      hash ^= messages_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1332,7 +1332,7 @@ namespace RobotInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      message_.WriteTo(output, _repeated_message_codec);
+      messages_.WriteTo(output, _repeated_messages_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1341,7 +1341,7 @@ namespace RobotInterface {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += message_.CalculateSize(_repeated_message_codec);
+      size += messages_.CalculateSize(_repeated_messages_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1353,7 +1353,7 @@ namespace RobotInterface {
       if (other == null) {
         return;
       }
-      message_.Add(other.message_);
+      messages_.Add(other.messages_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1366,7 +1366,7 @@ namespace RobotInterface {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            message_.AddEntriesFrom(input, _repeated_message_codec);
+            messages_.AddEntriesFrom(input, _repeated_messages_codec);
             break;
           }
         }
@@ -1378,7 +1378,7 @@ namespace RobotInterface {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      ///messages supported by all devices
+      /// Messages supported by all devices
       /// </summary>
       public sealed partial class RequestValues : pb::IMessage<RequestValues> {
         private static readonly pb::MessageParser<RequestValues> _parser = new pb::MessageParser<RequestValues>(() => new RequestValues());
@@ -1510,7 +1510,7 @@ namespace RobotInterface {
       }
 
       /// <summary>
-      ///messages robot arm
+      /// Messages for robot arm
       /// </summary>
       public sealed partial class SetAxisRobotArm : pb::IMessage<SetAxisRobotArm> {
         private static readonly pb::MessageParser<SetAxisRobotArm> _parser = new pb::MessageParser<SetAxisRobotArm>(() => new SetAxisRobotArm());
@@ -1822,12 +1822,9 @@ namespace RobotInterface {
           return new OneMessage(this);
         }
 
-        /// <summary>Field number for the "TargetDeviceAddress" field.</summary>
+        /// <summary>Field number for the "target_device_address" field.</summary>
         public const int TargetDeviceAddressFieldNumber = 1;
         private uint targetDeviceAddress_;
-        /// <summary>
-        /// fields
-        /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint TargetDeviceAddress {
           get { return targetDeviceAddress_; }

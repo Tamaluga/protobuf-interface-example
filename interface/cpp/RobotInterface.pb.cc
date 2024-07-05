@@ -281,7 +281,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RobotInterface_2eproto::offset
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::robot_interface::Upstream_OneMessage, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::robot_interface::Upstream_OneMessage, targetdeviceaddress_),
+  PROTOBUF_FIELD_OFFSET(::robot_interface::Upstream_OneMessage, target_device_address_),
   offsetof(::robot_interface::Upstream_OneMessageDefaultTypeInternal, device_description_),
   offsetof(::robot_interface::Upstream_OneMessageDefaultTypeInternal, values_robot_arm_),
   offsetof(::robot_interface::Upstream_OneMessageDefaultTypeInternal, values_light_sensor_),
@@ -292,7 +292,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RobotInterface_2eproto::offset
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::robot_interface::Upstream, message_),
+  PROTOBUF_FIELD_OFFSET(::robot_interface::Upstream, messages_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream_RequestValues, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -316,7 +316,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RobotInterface_2eproto::offset
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream_OneMessage, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream_OneMessage, targetdeviceaddress_),
+  PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream_OneMessage, target_device_address_),
   offsetof(::robot_interface::Downstream_OneMessageDefaultTypeInternal, request_values_),
   offsetof(::robot_interface::Downstream_OneMessageDefaultTypeInternal, set_axis_robot_arm_),
   offsetof(::robot_interface::Downstream_OneMessageDefaultTypeInternal, clear_queue_robot_arm_),
@@ -326,7 +326,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RobotInterface_2eproto::offset
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream, message_),
+  PROTOBUF_FIELD_OFFSET(::robot_interface::Downstream, messages_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::robot_interface::Axis)},
@@ -360,37 +360,38 @@ const char descriptor_table_protodef_RobotInterface_2eproto[] PROTOBUF_SECTION_V
   "\n\024RobotInterface.proto\022\017robot_interface\""
   "f\n\004Axis\022\016\n\006axis_1\030\001 \001(\001\022\016\n\006axis_2\030\002 \001(\001\022"
   "\016\n\006axis_3\030\003 \001(\001\022\016\n\006axis_4\030\004 \001(\001\022\016\n\006axis_"
-  "5\030\005 \001(\001\022\016\n\006axis_6\030\006 \001(\001\"\204\005\n\010Upstream\0225\n\007"
-  "message\030\001 \003(\0132$.robot_interface.Upstream"
-  ".OneMessage\032L\n\021DeviceDescription\022\014\n\004name"
-  "\030\001 \001(\t\022)\n\004type\030\002 \001(\0162\033.robot_interface.D"
-  "eviceType\032N\n\016ValuesRobotArm\022#\n\004axis\030\001 \001("
-  "\0132\025.robot_interface.Axis\022\027\n\017axis_queue_s"
-  "ize\030\002 \001(\005\032\"\n\021ValuesLightSensor\022\r\n\005light\030"
-  "\001 \001(\001\032\307\002\n\nOneMessage\022\033\n\023TargetDeviceAddr"
-  "ess\030\001 \001(\r\022I\n\022device_description\030\002 \001(\0132+."
-  "robot_interface.Upstream.DeviceDescripti"
-  "onH\000\022D\n\020values_robot_arm\030\003 \001(\0132(.robot_i"
-  "nterface.Upstream.ValuesRobotArmH\000\022J\n\023va"
-  "lues_light_sensor\030\004 \001(\0132+.robot_interfac"
-  "e.Upstream.ValuesLightSensorH\000\0220\n\005error\030"
-  "\005 \001(\0162\037.robot_interface.Upstream.ErrorH\000"
-  "B\r\n\013sub_message\"5\n\005Error\022\010\n\004NONE\020\000\022\"\n\036RO"
-  "BOT_ARM_FAILED_TO_REACH_AXIS\020\001\"\364\003\n\nDowns"
-  "tream\0227\n\007message\030\001 \003(\0132&.robot_interface"
-  ".Downstream.OneMessage\032\'\n\rRequestValues\022"
-  "\026\n\016request_values\030\001 \001(\010\032=\n\017SetAxisRobotA"
-  "rm\022*\n\013target_axis\030\001 \001(\0132\025.robot_interfac"
-  "e.Axis\032)\n\022ClearQueueRobotArm\022\023\n\013clear_qu"
-  "eue\030\001 \001(\010\032\231\002\n\nOneMessage\022\033\n\023TargetDevice"
-  "Address\030\001 \001(\r\022C\n\016request_values\030\002 \001(\0132)."
-  "robot_interface.Downstream.RequestValues"
-  "H\000\022I\n\022set_axis_robot_arm\030\003 \001(\0132+.robot_i"
-  "nterface.Downstream.SetAxisRobotArmH\000\022O\n"
-  "\025clear_queue_robot_arm\030\004 \001(\0132..robot_int"
-  "erface.Downstream.ClearQueueRobotArmH\000B\r"
-  "\n\013sub_message*6\n\nDeviceType\022\r\n\tROBOT_ARM"
-  "\020\000\022\020\n\014LIGHT_SENSOR\020\001\022\007\n\003ALL\020\002b\006proto3"
+  "5\030\005 \001(\001\022\016\n\006axis_6\030\006 \001(\001\"\207\005\n\010Upstream\0226\n\010"
+  "messages\030\001 \003(\0132$.robot_interface.Upstrea"
+  "m.OneMessage\032L\n\021DeviceDescription\022\014\n\004nam"
+  "e\030\001 \001(\t\022)\n\004type\030\002 \001(\0162\033.robot_interface."
+  "DeviceType\032N\n\016ValuesRobotArm\022#\n\004axis\030\001 \001"
+  "(\0132\025.robot_interface.Axis\022\027\n\017axis_queue_"
+  "size\030\002 \001(\005\032\"\n\021ValuesLightSensor\022\r\n\005light"
+  "\030\001 \001(\001\032\311\002\n\nOneMessage\022\035\n\025target_device_a"
+  "ddress\030\001 \001(\r\022I\n\022device_description\030\002 \001(\013"
+  "2+.robot_interface.Upstream.DeviceDescri"
+  "ptionH\000\022D\n\020values_robot_arm\030\003 \001(\0132(.robo"
+  "t_interface.Upstream.ValuesRobotArmH\000\022J\n"
+  "\023values_light_sensor\030\004 \001(\0132+.robot_inter"
+  "face.Upstream.ValuesLightSensorH\000\0220\n\005err"
+  "or\030\005 \001(\0162\037.robot_interface.Upstream.Erro"
+  "rH\000B\r\n\013sub_message\"5\n\005Error\022\010\n\004NONE\020\000\022\"\n"
+  "\036ROBOT_ARM_FAILED_TO_REACH_AXIS\020\001\"\367\003\n\nDo"
+  "wnstream\0228\n\010messages\030\001 \003(\0132&.robot_inter"
+  "face.Downstream.OneMessage\032\'\n\rRequestVal"
+  "ues\022\026\n\016request_values\030\001 \001(\010\032=\n\017SetAxisRo"
+  "botArm\022*\n\013target_axis\030\001 \001(\0132\025.robot_inte"
+  "rface.Axis\032)\n\022ClearQueueRobotArm\022\023\n\013clea"
+  "r_queue\030\001 \001(\010\032\233\002\n\nOneMessage\022\035\n\025target_d"
+  "evice_address\030\001 \001(\r\022C\n\016request_values\030\002 "
+  "\001(\0132).robot_interface.Downstream.Request"
+  "ValuesH\000\022I\n\022set_axis_robot_arm\030\003 \001(\0132+.r"
+  "obot_interface.Downstream.SetAxisRobotAr"
+  "mH\000\022O\n\025clear_queue_robot_arm\030\004 \001(\0132..rob"
+  "ot_interface.Downstream.ClearQueueRobotA"
+  "rmH\000B\r\n\013sub_message*6\n\nDeviceType\022\r\n\tROB"
+  "OT_ARM\020\000\022\020\n\014LIGHT_SENSOR\020\001\022\007\n\003ALL\020\002b\006pro"
+  "to3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_RobotInterface_2eproto_deps[1] = {
 };
@@ -409,7 +410,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rob
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_RobotInterface_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_RobotInterface_2eproto = {
-  false, false, descriptor_table_protodef_RobotInterface_2eproto, "RobotInterface.proto", 1357,
+  false, false, descriptor_table_protodef_RobotInterface_2eproto, "RobotInterface.proto", 1363,
   &descriptor_table_RobotInterface_2eproto_once, descriptor_table_RobotInterface_2eproto_sccs, descriptor_table_RobotInterface_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_RobotInterface_2eproto::offsets,
   file_level_metadata_RobotInterface_2eproto, 11, file_level_enum_descriptors_RobotInterface_2eproto, file_level_service_descriptors_RobotInterface_2eproto,
@@ -1529,7 +1530,7 @@ Upstream_OneMessage::Upstream_OneMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 Upstream_OneMessage::Upstream_OneMessage(const Upstream_OneMessage& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  targetdeviceaddress_ = from.targetdeviceaddress_;
+  target_device_address_ = from.target_device_address_;
   clear_has_sub_message();
   switch (from.sub_message_case()) {
     case kDeviceDescription: {
@@ -1557,7 +1558,7 @@ Upstream_OneMessage::Upstream_OneMessage(const Upstream_OneMessage& from)
 
 void Upstream_OneMessage::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Upstream_OneMessage_RobotInterface_2eproto.base);
-  targetdeviceaddress_ = 0u;
+  target_device_address_ = 0u;
   clear_has_sub_message();
 }
 
@@ -1628,7 +1629,7 @@ void Upstream_OneMessage::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  targetdeviceaddress_ = 0u;
+  target_device_address_ = 0u;
   clear_sub_message();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1641,10 +1642,10 @@ const char* Upstream_OneMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // uint32 TargetDeviceAddress = 1;
+      // uint32 target_device_address = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          targetdeviceaddress_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          target_device_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1705,10 +1706,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 TargetDeviceAddress = 1;
-  if (this->targetdeviceaddress() != 0) {
+  // uint32 target_device_address = 1;
+  if (this->target_device_address() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_targetdeviceaddress(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_target_device_address(), target);
   }
 
   // .robot_interface.Upstream.DeviceDescription device_description = 2;
@@ -1758,11 +1759,11 @@ size_t Upstream_OneMessage::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // uint32 TargetDeviceAddress = 1;
-  if (this->targetdeviceaddress() != 0) {
+  // uint32 target_device_address = 1;
+  if (this->target_device_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_targetdeviceaddress());
+        this->_internal_target_device_address());
   }
 
   switch (sub_message_case()) {
@@ -1828,8 +1829,8 @@ void Upstream_OneMessage::MergeFrom(const Upstream_OneMessage& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.targetdeviceaddress() != 0) {
-    _internal_set_targetdeviceaddress(from._internal_targetdeviceaddress());
+  if (from.target_device_address() != 0) {
+    _internal_set_target_device_address(from._internal_target_device_address());
   }
   switch (from.sub_message_case()) {
     case kDeviceDescription: {
@@ -1875,7 +1876,7 @@ bool Upstream_OneMessage::IsInitialized() const {
 void Upstream_OneMessage::InternalSwap(Upstream_OneMessage* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(targetdeviceaddress_, other->targetdeviceaddress_);
+  swap(target_device_address_, other->target_device_address_);
   swap(sub_message_, other->sub_message_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1895,14 +1896,14 @@ class Upstream::_Internal {
 
 Upstream::Upstream(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  message_(arena) {
+  messages_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:robot_interface.Upstream)
 }
 Upstream::Upstream(const Upstream& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      message_(from.message_) {
+      messages_(from.messages_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:robot_interface.Upstream)
 }
@@ -1942,7 +1943,7 @@ void Upstream::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  message_.Clear();
+  messages_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1954,13 +1955,13 @@ const char* Upstream::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .robot_interface.Upstream.OneMessage message = 1;
+      // repeated .robot_interface.Upstream.OneMessage messages = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_message(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_messages(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
@@ -1994,12 +1995,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .robot_interface.Upstream.OneMessage message = 1;
+  // repeated .robot_interface.Upstream.OneMessage messages = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_message_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_messages_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_message(i), target, stream);
+      InternalWriteMessage(1, this->_internal_messages(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2018,9 +2019,9 @@ size_t Upstream::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .robot_interface.Upstream.OneMessage message = 1;
-  total_size += 1UL * this->_internal_message_size();
-  for (const auto& msg : this->message_) {
+  // repeated .robot_interface.Upstream.OneMessage messages = 1;
+  total_size += 1UL * this->_internal_messages_size();
+  for (const auto& msg : this->messages_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -2056,7 +2057,7 @@ void Upstream::MergeFrom(const Upstream& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  message_.MergeFrom(from.message_);
+  messages_.MergeFrom(from.messages_);
 }
 
 void Upstream::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2080,7 +2081,7 @@ bool Upstream::IsInitialized() const {
 void Upstream::InternalSwap(Upstream* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  message_.InternalSwap(&other->message_);
+  messages_.InternalSwap(&other->messages_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Upstream::GetMetadata() const {
@@ -2776,7 +2777,7 @@ Downstream_OneMessage::Downstream_OneMessage(::PROTOBUF_NAMESPACE_ID::Arena* are
 Downstream_OneMessage::Downstream_OneMessage(const Downstream_OneMessage& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  targetdeviceaddress_ = from.targetdeviceaddress_;
+  target_device_address_ = from.target_device_address_;
   clear_has_sub_message();
   switch (from.sub_message_case()) {
     case kRequestValues: {
@@ -2800,7 +2801,7 @@ Downstream_OneMessage::Downstream_OneMessage(const Downstream_OneMessage& from)
 
 void Downstream_OneMessage::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Downstream_OneMessage_RobotInterface_2eproto.base);
-  targetdeviceaddress_ = 0u;
+  target_device_address_ = 0u;
   clear_has_sub_message();
 }
 
@@ -2867,7 +2868,7 @@ void Downstream_OneMessage::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  targetdeviceaddress_ = 0u;
+  target_device_address_ = 0u;
   clear_sub_message();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2880,10 +2881,10 @@ const char* Downstream_OneMessage::_InternalParse(const char* ptr, ::PROTOBUF_NA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // uint32 TargetDeviceAddress = 1;
+      // uint32 target_device_address = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          targetdeviceaddress_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          target_device_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2936,10 +2937,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 TargetDeviceAddress = 1;
-  if (this->targetdeviceaddress() != 0) {
+  // uint32 target_device_address = 1;
+  if (this->target_device_address() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_targetdeviceaddress(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_target_device_address(), target);
   }
 
   // .robot_interface.Downstream.RequestValues request_values = 2;
@@ -2982,11 +2983,11 @@ size_t Downstream_OneMessage::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // uint32 TargetDeviceAddress = 1;
-  if (this->targetdeviceaddress() != 0) {
+  // uint32 target_device_address = 1;
+  if (this->target_device_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_targetdeviceaddress());
+        this->_internal_target_device_address());
   }
 
   switch (sub_message_case()) {
@@ -3046,8 +3047,8 @@ void Downstream_OneMessage::MergeFrom(const Downstream_OneMessage& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.targetdeviceaddress() != 0) {
-    _internal_set_targetdeviceaddress(from._internal_targetdeviceaddress());
+  if (from.target_device_address() != 0) {
+    _internal_set_target_device_address(from._internal_target_device_address());
   }
   switch (from.sub_message_case()) {
     case kRequestValues: {
@@ -3089,7 +3090,7 @@ bool Downstream_OneMessage::IsInitialized() const {
 void Downstream_OneMessage::InternalSwap(Downstream_OneMessage* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(targetdeviceaddress_, other->targetdeviceaddress_);
+  swap(target_device_address_, other->target_device_address_);
   swap(sub_message_, other->sub_message_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -3109,14 +3110,14 @@ class Downstream::_Internal {
 
 Downstream::Downstream(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  message_(arena) {
+  messages_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:robot_interface.Downstream)
 }
 Downstream::Downstream(const Downstream& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      message_(from.message_) {
+      messages_(from.messages_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:robot_interface.Downstream)
 }
@@ -3156,7 +3157,7 @@ void Downstream::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  message_.Clear();
+  messages_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3168,13 +3169,13 @@ const char* Downstream::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .robot_interface.Downstream.OneMessage message = 1;
+      // repeated .robot_interface.Downstream.OneMessage messages = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_message(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_messages(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
@@ -3208,12 +3209,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .robot_interface.Downstream.OneMessage message = 1;
+  // repeated .robot_interface.Downstream.OneMessage messages = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_message_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_messages_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_message(i), target, stream);
+      InternalWriteMessage(1, this->_internal_messages(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3232,9 +3233,9 @@ size_t Downstream::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .robot_interface.Downstream.OneMessage message = 1;
-  total_size += 1UL * this->_internal_message_size();
-  for (const auto& msg : this->message_) {
+  // repeated .robot_interface.Downstream.OneMessage messages = 1;
+  total_size += 1UL * this->_internal_messages_size();
+  for (const auto& msg : this->messages_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -3270,7 +3271,7 @@ void Downstream::MergeFrom(const Downstream& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  message_.MergeFrom(from.message_);
+  messages_.MergeFrom(from.messages_);
 }
 
 void Downstream::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -3294,7 +3295,7 @@ bool Downstream::IsInitialized() const {
 void Downstream::InternalSwap(Downstream* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  message_.InternalSwap(&other->message_);
+  messages_.InternalSwap(&other->messages_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Downstream::GetMetadata() const {
