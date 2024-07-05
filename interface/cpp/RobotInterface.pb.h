@@ -935,13 +935,13 @@ class Upstream_OneMessage PROTOBUF_FINAL :
     kValuesLightSensorFieldNumber = 4,
     kErrorFieldNumber = 5,
   };
-  // uint32 TargetDeviceAddress = 1;
-  void clear_targetdeviceaddress();
-  ::PROTOBUF_NAMESPACE_ID::uint32 targetdeviceaddress() const;
-  void set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  // uint32 target_device_address = 1;
+  void clear_target_device_address();
+  ::PROTOBUF_NAMESPACE_ID::uint32 target_device_address() const;
+  void set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_targetdeviceaddress() const;
-  void _internal_set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_target_device_address() const;
+  void _internal_set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
   // .robot_interface.Upstream.DeviceDescription device_description = 2;
@@ -1026,7 +1026,7 @@ class Upstream_OneMessage PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 targetdeviceaddress_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 target_device_address_;
   union SubMessageUnion {
     SubMessageUnion() {}
     ::robot_interface::Upstream_DeviceDescription* device_description_;
@@ -1189,25 +1189,25 @@ class Upstream PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kMessageFieldNumber = 1,
+    kMessagesFieldNumber = 1,
   };
-  // repeated .robot_interface.Upstream.OneMessage message = 1;
-  int message_size() const;
+  // repeated .robot_interface.Upstream.OneMessage messages = 1;
+  int messages_size() const;
   private:
-  int _internal_message_size() const;
+  int _internal_messages_size() const;
   public:
-  void clear_message();
-  ::robot_interface::Upstream_OneMessage* mutable_message(int index);
+  void clear_messages();
+  ::robot_interface::Upstream_OneMessage* mutable_messages(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage >*
-      mutable_message();
+      mutable_messages();
   private:
-  const ::robot_interface::Upstream_OneMessage& _internal_message(int index) const;
-  ::robot_interface::Upstream_OneMessage* _internal_add_message();
+  const ::robot_interface::Upstream_OneMessage& _internal_messages(int index) const;
+  ::robot_interface::Upstream_OneMessage* _internal_add_messages();
   public:
-  const ::robot_interface::Upstream_OneMessage& message(int index) const;
-  ::robot_interface::Upstream_OneMessage* add_message();
+  const ::robot_interface::Upstream_OneMessage& messages(int index) const;
+  ::robot_interface::Upstream_OneMessage* add_messages();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage >&
-      message() const;
+      messages() const;
 
   // @@protoc_insertion_point(class_scope:robot_interface.Upstream)
  private:
@@ -1216,7 +1216,7 @@ class Upstream PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage > message_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage > messages_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_RobotInterface_2eproto;
 };
@@ -1767,13 +1767,13 @@ class Downstream_OneMessage PROTOBUF_FINAL :
     kSetAxisRobotArmFieldNumber = 3,
     kClearQueueRobotArmFieldNumber = 4,
   };
-  // uint32 TargetDeviceAddress = 1;
-  void clear_targetdeviceaddress();
-  ::PROTOBUF_NAMESPACE_ID::uint32 targetdeviceaddress() const;
-  void set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  // uint32 target_device_address = 1;
+  void clear_target_device_address();
+  ::PROTOBUF_NAMESPACE_ID::uint32 target_device_address() const;
+  void set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_targetdeviceaddress() const;
-  void _internal_set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_target_device_address() const;
+  void _internal_set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
   // .robot_interface.Downstream.RequestValues request_values = 2;
@@ -1845,7 +1845,7 @@ class Downstream_OneMessage PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 targetdeviceaddress_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 target_device_address_;
   union SubMessageUnion {
     SubMessageUnion() {}
     ::robot_interface::Downstream_RequestValues* request_values_;
@@ -1977,25 +1977,25 @@ class Downstream PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kMessageFieldNumber = 1,
+    kMessagesFieldNumber = 1,
   };
-  // repeated .robot_interface.Downstream.OneMessage message = 1;
-  int message_size() const;
+  // repeated .robot_interface.Downstream.OneMessage messages = 1;
+  int messages_size() const;
   private:
-  int _internal_message_size() const;
+  int _internal_messages_size() const;
   public:
-  void clear_message();
-  ::robot_interface::Downstream_OneMessage* mutable_message(int index);
+  void clear_messages();
+  ::robot_interface::Downstream_OneMessage* mutable_messages(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage >*
-      mutable_message();
+      mutable_messages();
   private:
-  const ::robot_interface::Downstream_OneMessage& _internal_message(int index) const;
-  ::robot_interface::Downstream_OneMessage* _internal_add_message();
+  const ::robot_interface::Downstream_OneMessage& _internal_messages(int index) const;
+  ::robot_interface::Downstream_OneMessage* _internal_add_messages();
   public:
-  const ::robot_interface::Downstream_OneMessage& message(int index) const;
-  ::robot_interface::Downstream_OneMessage* add_message();
+  const ::robot_interface::Downstream_OneMessage& messages(int index) const;
+  ::robot_interface::Downstream_OneMessage* add_messages();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage >&
-      message() const;
+      messages() const;
 
   // @@protoc_insertion_point(class_scope:robot_interface.Downstream)
  private:
@@ -2004,7 +2004,7 @@ class Downstream PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage > message_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage > messages_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_RobotInterface_2eproto;
 };
@@ -2377,24 +2377,24 @@ inline void Upstream_ValuesLightSensor::set_light(double value) {
 
 // Upstream_OneMessage
 
-// uint32 TargetDeviceAddress = 1;
-inline void Upstream_OneMessage::clear_targetdeviceaddress() {
-  targetdeviceaddress_ = 0u;
+// uint32 target_device_address = 1;
+inline void Upstream_OneMessage::clear_target_device_address() {
+  target_device_address_ = 0u;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 Upstream_OneMessage::_internal_targetdeviceaddress() const {
-  return targetdeviceaddress_;
+inline ::PROTOBUF_NAMESPACE_ID::uint32 Upstream_OneMessage::_internal_target_device_address() const {
+  return target_device_address_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 Upstream_OneMessage::targetdeviceaddress() const {
-  // @@protoc_insertion_point(field_get:robot_interface.Upstream.OneMessage.TargetDeviceAddress)
-  return _internal_targetdeviceaddress();
+inline ::PROTOBUF_NAMESPACE_ID::uint32 Upstream_OneMessage::target_device_address() const {
+  // @@protoc_insertion_point(field_get:robot_interface.Upstream.OneMessage.target_device_address)
+  return _internal_target_device_address();
 }
-inline void Upstream_OneMessage::_internal_set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void Upstream_OneMessage::_internal_set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   
-  targetdeviceaddress_ = value;
+  target_device_address_ = value;
 }
-inline void Upstream_OneMessage::set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_targetdeviceaddress(value);
-  // @@protoc_insertion_point(field_set:robot_interface.Upstream.OneMessage.TargetDeviceAddress)
+inline void Upstream_OneMessage::set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_target_device_address(value);
+  // @@protoc_insertion_point(field_set:robot_interface.Upstream.OneMessage.target_device_address)
 }
 
 // .robot_interface.Upstream.DeviceDescription device_description = 2;
@@ -2664,43 +2664,43 @@ inline Upstream_OneMessage::SubMessageCase Upstream_OneMessage::sub_message_case
 
 // Upstream
 
-// repeated .robot_interface.Upstream.OneMessage message = 1;
-inline int Upstream::_internal_message_size() const {
-  return message_.size();
+// repeated .robot_interface.Upstream.OneMessage messages = 1;
+inline int Upstream::_internal_messages_size() const {
+  return messages_.size();
 }
-inline int Upstream::message_size() const {
-  return _internal_message_size();
+inline int Upstream::messages_size() const {
+  return _internal_messages_size();
 }
-inline void Upstream::clear_message() {
-  message_.Clear();
+inline void Upstream::clear_messages() {
+  messages_.Clear();
 }
-inline ::robot_interface::Upstream_OneMessage* Upstream::mutable_message(int index) {
-  // @@protoc_insertion_point(field_mutable:robot_interface.Upstream.message)
-  return message_.Mutable(index);
+inline ::robot_interface::Upstream_OneMessage* Upstream::mutable_messages(int index) {
+  // @@protoc_insertion_point(field_mutable:robot_interface.Upstream.messages)
+  return messages_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage >*
-Upstream::mutable_message() {
-  // @@protoc_insertion_point(field_mutable_list:robot_interface.Upstream.message)
-  return &message_;
+Upstream::mutable_messages() {
+  // @@protoc_insertion_point(field_mutable_list:robot_interface.Upstream.messages)
+  return &messages_;
 }
-inline const ::robot_interface::Upstream_OneMessage& Upstream::_internal_message(int index) const {
-  return message_.Get(index);
+inline const ::robot_interface::Upstream_OneMessage& Upstream::_internal_messages(int index) const {
+  return messages_.Get(index);
 }
-inline const ::robot_interface::Upstream_OneMessage& Upstream::message(int index) const {
-  // @@protoc_insertion_point(field_get:robot_interface.Upstream.message)
-  return _internal_message(index);
+inline const ::robot_interface::Upstream_OneMessage& Upstream::messages(int index) const {
+  // @@protoc_insertion_point(field_get:robot_interface.Upstream.messages)
+  return _internal_messages(index);
 }
-inline ::robot_interface::Upstream_OneMessage* Upstream::_internal_add_message() {
-  return message_.Add();
+inline ::robot_interface::Upstream_OneMessage* Upstream::_internal_add_messages() {
+  return messages_.Add();
 }
-inline ::robot_interface::Upstream_OneMessage* Upstream::add_message() {
-  // @@protoc_insertion_point(field_add:robot_interface.Upstream.message)
-  return _internal_add_message();
+inline ::robot_interface::Upstream_OneMessage* Upstream::add_messages() {
+  // @@protoc_insertion_point(field_add:robot_interface.Upstream.messages)
+  return _internal_add_messages();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Upstream_OneMessage >&
-Upstream::message() const {
-  // @@protoc_insertion_point(field_list:robot_interface.Upstream.message)
-  return message_;
+Upstream::messages() const {
+  // @@protoc_insertion_point(field_list:robot_interface.Upstream.messages)
+  return messages_;
 }
 
 // -------------------------------------------------------------------
@@ -2840,24 +2840,24 @@ inline void Downstream_ClearQueueRobotArm::set_clear_queue(bool value) {
 
 // Downstream_OneMessage
 
-// uint32 TargetDeviceAddress = 1;
-inline void Downstream_OneMessage::clear_targetdeviceaddress() {
-  targetdeviceaddress_ = 0u;
+// uint32 target_device_address = 1;
+inline void Downstream_OneMessage::clear_target_device_address() {
+  target_device_address_ = 0u;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 Downstream_OneMessage::_internal_targetdeviceaddress() const {
-  return targetdeviceaddress_;
+inline ::PROTOBUF_NAMESPACE_ID::uint32 Downstream_OneMessage::_internal_target_device_address() const {
+  return target_device_address_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 Downstream_OneMessage::targetdeviceaddress() const {
-  // @@protoc_insertion_point(field_get:robot_interface.Downstream.OneMessage.TargetDeviceAddress)
-  return _internal_targetdeviceaddress();
+inline ::PROTOBUF_NAMESPACE_ID::uint32 Downstream_OneMessage::target_device_address() const {
+  // @@protoc_insertion_point(field_get:robot_interface.Downstream.OneMessage.target_device_address)
+  return _internal_target_device_address();
 }
-inline void Downstream_OneMessage::_internal_set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void Downstream_OneMessage::_internal_set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   
-  targetdeviceaddress_ = value;
+  target_device_address_ = value;
 }
-inline void Downstream_OneMessage::set_targetdeviceaddress(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_targetdeviceaddress(value);
-  // @@protoc_insertion_point(field_set:robot_interface.Downstream.OneMessage.TargetDeviceAddress)
+inline void Downstream_OneMessage::set_target_device_address(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_target_device_address(value);
+  // @@protoc_insertion_point(field_set:robot_interface.Downstream.OneMessage.target_device_address)
 }
 
 // .robot_interface.Downstream.RequestValues request_values = 2;
@@ -3092,43 +3092,43 @@ inline Downstream_OneMessage::SubMessageCase Downstream_OneMessage::sub_message_
 
 // Downstream
 
-// repeated .robot_interface.Downstream.OneMessage message = 1;
-inline int Downstream::_internal_message_size() const {
-  return message_.size();
+// repeated .robot_interface.Downstream.OneMessage messages = 1;
+inline int Downstream::_internal_messages_size() const {
+  return messages_.size();
 }
-inline int Downstream::message_size() const {
-  return _internal_message_size();
+inline int Downstream::messages_size() const {
+  return _internal_messages_size();
 }
-inline void Downstream::clear_message() {
-  message_.Clear();
+inline void Downstream::clear_messages() {
+  messages_.Clear();
 }
-inline ::robot_interface::Downstream_OneMessage* Downstream::mutable_message(int index) {
-  // @@protoc_insertion_point(field_mutable:robot_interface.Downstream.message)
-  return message_.Mutable(index);
+inline ::robot_interface::Downstream_OneMessage* Downstream::mutable_messages(int index) {
+  // @@protoc_insertion_point(field_mutable:robot_interface.Downstream.messages)
+  return messages_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage >*
-Downstream::mutable_message() {
-  // @@protoc_insertion_point(field_mutable_list:robot_interface.Downstream.message)
-  return &message_;
+Downstream::mutable_messages() {
+  // @@protoc_insertion_point(field_mutable_list:robot_interface.Downstream.messages)
+  return &messages_;
 }
-inline const ::robot_interface::Downstream_OneMessage& Downstream::_internal_message(int index) const {
-  return message_.Get(index);
+inline const ::robot_interface::Downstream_OneMessage& Downstream::_internal_messages(int index) const {
+  return messages_.Get(index);
 }
-inline const ::robot_interface::Downstream_OneMessage& Downstream::message(int index) const {
-  // @@protoc_insertion_point(field_get:robot_interface.Downstream.message)
-  return _internal_message(index);
+inline const ::robot_interface::Downstream_OneMessage& Downstream::messages(int index) const {
+  // @@protoc_insertion_point(field_get:robot_interface.Downstream.messages)
+  return _internal_messages(index);
 }
-inline ::robot_interface::Downstream_OneMessage* Downstream::_internal_add_message() {
-  return message_.Add();
+inline ::robot_interface::Downstream_OneMessage* Downstream::_internal_add_messages() {
+  return messages_.Add();
 }
-inline ::robot_interface::Downstream_OneMessage* Downstream::add_message() {
-  // @@protoc_insertion_point(field_add:robot_interface.Downstream.message)
-  return _internal_add_message();
+inline ::robot_interface::Downstream_OneMessage* Downstream::add_messages() {
+  // @@protoc_insertion_point(field_add:robot_interface.Downstream.messages)
+  return _internal_add_messages();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::robot_interface::Downstream_OneMessage >&
-Downstream::message() const {
-  // @@protoc_insertion_point(field_list:robot_interface.Downstream.message)
-  return message_;
+Downstream::messages() const {
+  // @@protoc_insertion_point(field_list:robot_interface.Downstream.messages)
+  return messages_;
 }
 
 #ifdef __GNUC__
